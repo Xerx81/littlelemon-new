@@ -8,7 +8,7 @@ function Menu() {
     
     useEffect(() => {
         setLoading(true);
-        axios.get("https://localhost:8000/restaurant/menu/items/")
+        axios.get("http://localhost:8000/restaurant/menu/items/")
             .then((response) => setMenuItems(response.data))
             .catch((error) => console.error(error));
         setLoading(false);
